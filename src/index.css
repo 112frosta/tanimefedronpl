@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    @apply text-white bg-zinc-900;
+    background: url("/background.svg") no-repeat center center fixed;
+  }
+}
