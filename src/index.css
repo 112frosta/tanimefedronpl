@@ -1,10 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    @apply text-white bg-zinc-900;
-    background: url("/background.svg") no-repeat center center fixed;
+    font-family: "Inter", sans-serif;
+    @apply text-white bg-zinc-950;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0d0c0c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #09090b;
+    border-radius: 10px;
+    border: 3px solid #0d0c0c;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0a0a0a;
   }
 }
